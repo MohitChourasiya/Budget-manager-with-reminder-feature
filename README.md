@@ -19,3 +19,7 @@ ScreenShots-
 
 
 ![photo_2023-08-03_21-22-44](https://github.com/MohitChourasiya/Budget-manager-with-reminder-feature/assets/141273284/c02b0c06-44cb-488d-8073-ec358d3494fc)
+
+![photo_2023-08-03_21-32-43](https://github.com/MohitChourasiya/Budget-manager-with-reminder-feature/assets/141273284/0aea84b4-059e-4b2b-be4a-90e5045b9d90)
+![photo_2023-08-03_21-32-38](https://github.com/MohitChourasiya/Budget-manager-with-reminder-feature/assets/141273284/93c50dfb-d974-43fd-a339-d357f37016f0)
+![photo_2023-08-03_21-32-32](https://github.com/MohitChourasiya/Budget-manager-with-reminder-feature/assets/141273284/4408fb7f-dd47-44c5-8880-f2905b0faf48)
