@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_height="160dp"
+        android:layout_width="160dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login to continue"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/register"
+        android:paddingLeft="12dp"
+        android:textColorHint="#828282"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:hint="Email"
+        android:layout_marginRight="65dp"
+        android:layout_marginLeft="65dp"/>
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/register"
+        android:paddingLeft="12dp"
+        android:textColorHint="#828282"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginRight="65dp"
+        android:layout_marginLeft="65dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/submitBtn"
+        android:layout_height="45dp"
+    android:layout_width="180dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="42dp"
+    app:cardCornerRadius="5dp"
+    android:outlineSpotShadowColor="#EFB815"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/black"
+    app:cardPreventCornerOverlap="true"
+    android:outlineAmbientShadowColor="#EFB815"
+    android:layout_marginBottom="20dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="LogIn"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</androidx.cardview.widget.CardView>
+
+
+    -<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="177dp"
+        android:text="Don't have an account? "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="177dp"
+        android:layout_toRightOf="@+id/text_login"
+        android:text="Signup"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

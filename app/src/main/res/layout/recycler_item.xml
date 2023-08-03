@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardBackgroundColor="@color/purple_200"
+    android:layout_margin="10dp"
+    android:id="@+id/cardViewRecyclerItem">
+    <View
+        android:id="@+id/priority"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Added"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:layout_marginStart="5dp"/>
+
+
+
+        <TextView
+
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:text="Notes- "/>
+
+
+        <TextView
+            android:id="@+id/noteRecycl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/desc"
+            android:text="Your Note "/>
+
+        <TextView
+            android:layout_below="@+id/noteRecycl"
+            android:id="@+id/sign"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:text="Amount- "/>
+        <TextView
+            android:layout_below="@+id/noteRecycl"
+            android:id="@+id/amountRecycl"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:textColor="#F51E1E"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:text="Your Note "/>
+
+        <TextView
+            android:id="@+id/dateRecycl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountRecycl"
+            android:layout_marginTop="4dp"
+
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"
+            android:text="Your Note "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

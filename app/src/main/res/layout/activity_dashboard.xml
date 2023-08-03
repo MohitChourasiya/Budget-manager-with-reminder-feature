@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mainactivity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:text="Dashboard"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/logout" />
+
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:id="@+id/incomeTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:textSize="18sp"
+                        android:textColor="@color/design_default_color_primary"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expense"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:id="@+id/expenditureTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:textSize="18sp"
+                        android:textColor="#F51E1E"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:id="@+id/balanceTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:textSize="18sp"
+                        android:textColor="@color/card_income"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"/>
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+
+        android:id="@+id/reminderBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="400dp"
+        app:cardBackgroundColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/addMoneyBtn"
+        android:layout_margin="20dp"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reminderss"
+            android:background="@color/black"
+
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+
+        android:id="@+id/addMoneyBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="400dp"
+        app:cardBackgroundColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/refreshBtn"
+        android:layout_margin="20dp"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_money"
+            android:background="@color/black"
+
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/refreshBtn"
+        android:visibility="gone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="400dp"
+        app:cardBackgroundColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/addTransectionCardButton"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/update"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addTransectionCardButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/management"
+            android:background="@color/black"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

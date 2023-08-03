@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118518494490",
+    "project_id": "budget-management-e80ad",
+    "storage_bucket": "budget-management-e80ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118518494490:android:223599db82fa2774f268a3",
+        "android_client_info": {
+          "package_name": "com.example.budgetmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118518494490-nnuajghqonjk76bmkg3o5rjovon46202.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxcoJH_ihMRfGXBe2vR_Gx7jsMOdjq9AU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118518494490-ipjgttpglog0l8kbipipodl3p30m11mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
