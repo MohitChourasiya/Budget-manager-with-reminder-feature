@@ -4,6 +4,10 @@ Login-Signup is build with firebase database
 remainder feature using alarm manager,notification manager library of android studio
 you can add update delete your expense and income 
 recycler view is used for multiple views.
+
+ScreenShots-
+
+
 ![photo_2023-08-03_21-21-52](https://github.com/MohitChourasiya/Budget-manager-with-reminder-feature/assets/141273284/be6a1c8d-fd7a-4e76-aeae-f8c98d3a36c4)
 
 ![photo_2023-08-03_21-22-11](https://github.com/MohitChourasiya/Budget-manager-with-reminder-feature/assets/141273284/8e467004-22f7-48ad-b8eb-061b20259901)
