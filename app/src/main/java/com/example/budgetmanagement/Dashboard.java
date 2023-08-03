@@ -72,6 +72,8 @@ public class Dashboard extends AppCompatActivity {
             }
 
         });
+
+
         auth.addAuthStateListener(new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -180,6 +182,36 @@ public class Dashboard extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed() {
+        Dialog dialog =new Dialog(Dashboard.this);
+        dialog.getWindow();
+        dialog.getWindow().setGravity(Gravity.CENTER);
+        Window window = dialog.getWindow();
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        dialog.setContentView(R.layout.popupl_exit);
+        dialog.setCancelable(false);
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.register);
+        dialog.show();
 
+        CardView applybtn = dialog.findViewById(R.id.noLogoutButton);
+        applybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        CardView yesApply = dialog.findViewById(R.id.yesLogoutButton);
+        yesApply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                System.exit(0);
+                finish();
+            }
+        });                                                                                 //Makes the user to exit from the app
+
+
+    }
 
 }

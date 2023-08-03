@@ -51,6 +51,7 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent lg = new Intent(SignUp.this,Login.class);
                 startActivity(lg);
+                finish();
             }
         });
 
@@ -77,7 +78,9 @@ public class SignUp extends AppCompatActivity {
             mAuth.createUserWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
                 public void onSuccess(AuthResult authResult) {
-                    Toast.makeText(SignUp.this, "success", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SignUp.this,Dashboard.class));
+                    Toast.makeText(SignUp.this, "Success ", Toast.LENGTH_SHORT).show();
+                    finish();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

@@ -38,6 +38,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this,SignUp.class));
+                finish();
             }
         });
 
@@ -64,6 +65,7 @@ public class Login extends AppCompatActivity {
                     try {
                         startActivity(new Intent(Login.this,Dashboard.class));
                         Toast.makeText(Login.this, "Login Success ", Toast.LENGTH_SHORT).show();
+                        finish();
                     }catch (Exception e){}
 
                 }
