@@ -54,8 +54,19 @@ public class Dashboard extends AppCompatActivity {
         binding.addTransectionCardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(binding.refreshBtn.getVisibility()  == View.VISIBLE & binding.addMoneyBtn.getVisibility()  == View.VISIBLE &binding.reminderBtn.getVisibility()  == View.VISIBLE){
 
-                if (visible==1){
+                    binding.refreshBtn.setVisibility(View.GONE);
+                    binding.addMoneyBtn.setVisibility(View.GONE);
+                    binding.reminderBtn.setVisibility(View.GONE);
+                }
+                else if(binding.refreshBtn.getVisibility()  == View.GONE & binding.addMoneyBtn.getVisibility()  == View.GONE &binding.reminderBtn.getVisibility()  == View.GONE) {
+
+                    binding.refreshBtn.setVisibility(View.VISIBLE);
+                    binding.addMoneyBtn.setVisibility(View.VISIBLE);
+                    binding.reminderBtn.setVisibility(View.VISIBLE);
+                }
+                   /* if (visible==1){
                     binding.refreshBtn.setVisibility(View.VISIBLE);
                     binding.addMoneyBtn.setVisibility(View.VISIBLE);
                     binding.reminderBtn.setVisibility(View.VISIBLE);
@@ -66,7 +77,7 @@ public class Dashboard extends AppCompatActivity {
                     binding.refreshBtn.setVisibility(View.GONE);
                     binding.addMoneyBtn.setVisibility(View.GONE);
                     binding.reminderBtn.setVisibility(View.GONE);
-                }
+                }*/
 
 
             }
